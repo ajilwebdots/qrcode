@@ -17,7 +17,9 @@ const database = [];
 // Hardcoded admin credentials
 const adminEmail = 'webdotsadminonlycanaccess@gmail.com';
 const adminPassword = 'vIWNPZcJZNDYIaKINBhMQdxUDG8p';
-
+app.get('/get', (req, res) => {
+    console.log("sssssssssssss")
+});
 app.post('/api/login', (req, res) => {
     const { username, password } = req.body;
 
