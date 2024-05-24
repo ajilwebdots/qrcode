@@ -12,7 +12,7 @@ function LoginPage({ onLogin }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/login', { username, password });
+            const response = await axios.post('http://localhost:5000/api/login', { username, password });
             onLogin(response.data.success);
             navigate('/dashboard');
         } catch (error) {
